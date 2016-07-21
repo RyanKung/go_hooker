@@ -43,12 +43,8 @@ static float y = -1;
     
     // 算与联合广场的坐标偏移量
     if (x == -1 && y == -1) {
-        //x = pos.latitude - 40.7;
-        //y = pos.longitude - (-74.0);
-        
-        x = pos.latitude - -52.52;
-        y = pos.longitude - (13.401);
-
+        x = pos.latitude - 37.7883923;
+        y = pos.longitude - (-122.4076413);
         
         [[NSUserDefaults standardUserDefaults] setValue:@(x) forKey:@"_fake_x"];
         [[NSUserDefaults standardUserDefaults] setValue:@(y) forKey:@"_fake_y"];
